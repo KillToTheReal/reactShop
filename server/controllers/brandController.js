@@ -13,6 +13,7 @@ class BrandController {
 
     return res.json(result);
   }
+
   async delete(req, res) {
     const { id } = req.query;
     const brand = await Brand.findByPk(id);
